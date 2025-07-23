@@ -1,0 +1,177 @@
+{
+    "Svelte 5 Component": {
+        "prefix": "s5comp",
+        "body": [
+            "<script lang=\"ts\">",
+            "\t$1",
+            "</script>",
+            "",
+            "<div>",
+            "\t<h1>$2</h1>",
+            "</div>",
+            "",
+            "<style>",
+            "\t$3",
+            "</style>"
+        ],
+        "description": "Create a basic Svelte 5 component structure with TypeScript"
+    },
+    "State Rune": {
+        "prefix": "s5state",
+        "body": [
+            "const ${1:count} = $state(${2:0});"
+        ],
+        "description": "Create a reactive state variable using $state rune"
+    },
+    "Derived Rune": {
+        "prefix": "s5derived",
+        "body": [
+            "const ${1:doubled} = $derived(${2:count} * 2);"
+        ],
+        "description": "Create a derived value using $derived rune"
+    },
+    "Effect Rune": {
+        "prefix": "s5effect",
+        "body": [
+            "$effect(() => {",
+            "\t${1:// Effect logic here}",
+            "});"
+        ],
+        "description": "Create a side effect using $effect rune"
+    },
+    "Props Rune": {
+        "prefix": "s5props",
+        "body": [
+            "type Props = {",
+            "\t${1:prop1}: ${2:string};",
+            "\t${3:prop2}?: ${4:number};",
+            "};",
+            "",
+            "const { ${1:prop1}, ${3:prop2} = ${5:defaultValue} }: Props = $props();"
+        ],
+        "description": "Define component props using $props rune with TypeScript"
+    },
+    "Script with Props": {
+        "prefix": "s5scriptprops",
+        "body": [
+            "<script lang=\"ts\">",
+            "\ttype Props = {",
+            "\t\t${1:prop1}: ${2:string};",
+            "\t\t${3:prop2}?: ${4:number};",
+            "\t};",
+            "",
+            "\tconst { ${1:prop1}, ${3:prop2} }: Props = $props();",
+            "</script>"
+        ],
+        "description": "Create a script section with props using TypeScript"
+    },
+    "Event Handler": {
+        "prefix": "s5on",
+        "body": [
+            "on${1:click}={${2:handler}}"
+        ],
+        "description": "Create an event handler attribute"
+    },
+    "Each Block": {
+        "prefix": "s5each",
+        "body": [
+            "{#each ${1:items} as ${2:item} (${2:item}.id)}",
+            "\t<div>{${2:item}}</div>",
+            "{/each}"
+        ],
+        "description": "Create an each block for iteration with key"
+    },
+    "Each Block with Index": {
+        "prefix": "s5eachi",
+        "body": [
+            "{#each ${1:items} as ${2:item}, ${3:index} (${2:item}.id)}",
+            "\t<div>{${3:index}}: {${2:item}}</div>",
+            "{/each}"
+        ],
+        "description": "Create an each block with index and key"
+    },
+    "If Block": {
+        "prefix": "s5if",
+        "body": [
+            "{#if ${1:condition}}",
+            "\t${2:<p>Content</p>}",
+            "{/if}"
+        ],
+        "description": "Create a conditional if block"
+    },
+    "If Else Block": {
+        "prefix": "s5ifelse",
+        "body": [
+            "{#if ${1:condition}}",
+            "\t${2:<p>True content</p>}",
+            "{:else}",
+            "\t${3:<p>False content</p>}",
+            "{/if}"
+        ],
+        "description": "Create an if-else block"
+    },
+    "Snippet Definition": {
+        "prefix": "s5snippet",
+        "body": [
+            "{#snippet ${1:name}(${2:params})}",
+            "\t${3:<p>Snippet content</p>}",
+            "{/snippet}"
+        ],
+        "description": "Define a reusable snippet"
+    },
+    "Render children": {
+        "prefix": "s5children",
+        "body": [
+            "{@render children()}"
+        ],
+        "description": "Render children components"
+    },
+    "Render Snippet": {
+        "prefix": "s5render",
+        "body": [
+            "{@render ${1:snippetName}(${2:args})}"
+        ],
+        "description": "Render a snippet with arguments"
+    },
+    "HTML Tag": {
+        "prefix": "s5html",
+        "body": [
+            "{@html ${1:htmlString}}"
+        ],
+        "description": "Render raw HTML content"
+    },
+    "Const Tag": {
+        "prefix": "s5const",
+        "body": [
+            "{@const ${1:name} = ${2:expression}}"
+        ],
+        "description": "Define a local constant in markup"
+    },
+    "Bind Directive": {
+        "prefix": "s5bind",
+        "body": [
+            "bind:${1:property}={${2:variable}}"
+        ],
+        "description": "Create a bind directive"
+    },
+    "Class Directive": {
+        "prefix": "s5class",
+        "body": [
+            "class:${1:className}={${2:condition}}"
+        ],
+        "description": "Conditionally apply CSS class"
+    },
+    "TypeScript Component": {
+        "prefix": "s5ts",
+        "body": [
+            "<script lang=\"ts\">",
+            "\t${1:// TypeScript code}",
+            "</script>",
+            "",
+            "<div>",
+            "\t${2:<h1>Hello TypeScript!</h1>}",
+            "</div>"
+        ],
+        "description": "Create TypeScript Svelte component"
+    }
+}
