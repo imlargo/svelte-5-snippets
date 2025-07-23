@@ -2,37 +2,19 @@
 	"name": "svelte-5-snippets",
 	"displayName": "Svelte 5 Snippets",
 	"description": "Complete collection of Svelte 5 code snippets for faster development with runes, components, and modern features",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"publisher": "imlargo",
 	"engines": {
-		"vscode": "^1.74.0"
+		"vscode": "^1.102.0"
 	},
 	"categories": [
 		"Snippets"
-	],
-	"keywords": [
-		"svelte",
-		"svelte 5",
-		"runes",
-		"snippets",
-		"javascript",
-		"typescript",
-		"web",
-		"frontend"
 	],
 	"contributes": {
 		"snippets": [
 			{
 				"language": "svelte",
-				"path": "./snippets/svelte.json"
-			},
-			{
-				"language": "javascript",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "typescript",
-				"path": "./snippets/typescript.json"
+				"path": "./snippets/snippets.code-snippets"
 			}
 		]
 	},
@@ -43,6 +25,5 @@
 	"bugs": {
 		"url": "https://github.com/imlargo/svelte-5-snippets/issues"
 	},
-	"homepage": "https://github.com/imlargo/svelte-5-snippets#readme",
-	"license": "MIT"
+	"homepage": "https://github.com/imlargo/svelte-5-snippets#readme"
 }
