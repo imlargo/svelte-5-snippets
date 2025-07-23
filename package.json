@@ -2,7 +2,7 @@
 	"name": "sv5-snippets",
 	"displayName": "Svelte 5 - Snippets",
 	"description": "Complete collection of Svelte 5 code snippets for faster development with runes, components, and modern features",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "imlargo",
 	"engines": {
 		"vscode": "^1.102.0"

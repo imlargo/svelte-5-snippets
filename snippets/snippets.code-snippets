@@ -60,7 +60,7 @@
             "\t\t${3:prop2}?: ${4:number};",
             "\t};",
             "",
-            "\tconst { ${1:prop1}, ${3:prop2} }: Props = $props();",
+            "\tconst { ${1:prop1}, ${3:prop2} }: Props = $$props();",
             "</script>"
         ],
         "description": "Create a script section with props using TypeScript"
