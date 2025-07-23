@@ -25,5 +25,6 @@
 	"bugs": {
 		"url": "https://github.com/imlargo/svelte-5-snippets/issues"
 	},
-	"homepage": "https://github.com/imlargo/svelte-5-snippets#readme"
+	"homepage": "https://github.com/imlargo/svelte-5-snippets#readme",
+	"icon": "assets/svelte.webp"
 }
